@@ -148,7 +148,7 @@ public class PitchController extends Controller {
 
             return CompletableFuture.completedFuture(
                     ok(com.gitpitch.views.html.Slideshow.render(ssm,
-                            deps, isOffline, serverPrinting, webPrinting)));
+                        rndr, deps, isOffline, serverPrinting, webPrinting)));
 
         } else {
 
@@ -180,7 +180,7 @@ public class PitchController extends Controller {
                              */
                             ssm = ssm.clone(pp);
                             return ok(com.gitpitch.views.html.Slideshow.render(ssm,
-                                            deps, isOffline, serverPrinting, webPrinting));
+                                rndr, deps, isOffline, serverPrinting, webPrinting));
 
                         } else {
 
@@ -195,7 +195,7 @@ public class PitchController extends Controller {
                                 log.info("slideshow: [ yaml, fetchd, online ] {}", pp);
 
                             return ok(com.gitpitch.views.html.Slideshow.render(ssm,
-                                    deps, isOffline, serverPrinting, webPrinting));
+                                    rndr, deps, isOffline, serverPrinting, webPrinting));
                         }
 
                   });
@@ -280,7 +280,6 @@ public class PitchController extends Controller {
                                                        deps,
                                                        isOffline,
                                                        userAgentIsChrome())));
-
     } // home action
 
     /*
