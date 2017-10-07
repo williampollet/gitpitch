@@ -155,7 +155,7 @@ public class PitchEmbed {
     private final static String GITPITCH = "GitPitch";
     private final static String GITPITCH_PRESENTS = "GitPitch Presents: ";
     private final static String GITPITCH_URL = "https://gitpitch.com";
-    private final static String TYPE = "html";
+    private final static String TYPE = "rich";
     private final static String VERSION = "1.0";
     private final static String CACHE = "180";
     private final static String DEFAULT_WIDTH = "960";
