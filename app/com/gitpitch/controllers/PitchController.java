@@ -30,6 +30,7 @@ import com.gitpitch.models.MarkdownModel;
 import com.gitpitch.executors.FrontEndThreads;
 import com.gitpitch.models.SlideshowModel;
 import com.gitpitch.services.PitchService;
+import com.gitpitch.oembed.PitchEmbed;
 import com.gitpitch.policies.Dependencies;
 import com.gitpitch.utils.GitRepoRenderer;
 import com.gitpitch.utils.PitchParams;
@@ -38,6 +39,7 @@ import play.Configuration;
 import play.Environment;
 import play.Logger;
 import play.Logger.ALogger;
+import play.libs.Json;
 import play.libs.ws.*;
 import play.mvc.*;
 import views.html.*;
@@ -444,6 +446,37 @@ public class PitchController extends Controller {
     } // gist action
 
     /*
+     * oembed generates an oEmbed provider response.
+     */
+    public Result oembed(String url,
+                         String format,
+                         String width,
+                         String height,
+                         String maxwidth,
+                         String maxheight,
+                         String referrer) {
+
+        log.info("oembed: [ {}, {}, {} ]", url, format, referrer);
+
+        PitchEmbed pembed = PitchEmbed.build(grsManager,
+                                             url,
+                                             width,
+                                             height,
+                                             maxwidth,
+                                             maxheight);
+        Result result = TODO; // Indicates 501 NotImplemented
+        switch(format) {
+            case OEMBED_JSON:
+                result = ok(Json.toJson(pembed));
+                break;
+            case OEMBED_XML:
+                result = ok(com.gitpitch.views.xml.OEmbed.render(pembed));
+                break;
+        }
+        return result;
+    } // oembed action
+
+    /*
      * Raw returns file content identified by path.
      */
     public CompletionStage<Result> raw(String grs,
@@ -502,4 +535,7 @@ public class PitchController extends Controller {
             "GitPitch Slideshow print service temporarily unavailable.";
     private static final String PITCHME_OFFLINE_ERROR =
             "GitPitch Slideshow offline service temporarily unavailable.";
+
+    private static final String OEMBED_JSON = "json";
+    private static final String OEMBED_XML  = "xml";
 }
