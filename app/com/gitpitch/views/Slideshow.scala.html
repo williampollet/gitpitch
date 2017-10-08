@@ -1,6 +1,12 @@
 @import com.gitpitch.views.html.frags._
 
-@(ssm: com.gitpitch.models.SlideshowModel, rndr: com.gitpitch.utils.GitRepoRenderer, deps: com.gitpitch.policies.Dependencies, offline: Boolean, serverPrinting: Boolean, webPrinting: Boolean)
+@(ssm: com.gitpitch.models.SlideshowModel,
+  rndr: com.gitpitch.utils.GitRepoRenderer,
+  deps: com.gitpitch.policies.Dependencies,
+  gpToken: String,
+  offline: Boolean,
+  serverPrinting: Boolean,
+  webPrinting: Boolean)
 
 <!DOCTYPE html>
 <html>
@@ -17,7 +23,7 @@
     @SlideshowNotificationBarStyle(ssm)
     @SlideshowCodeFragHighlightStyle()
     @SlideshowThemeOverride(ssm)
-    @SlideshowGoogleAnalytics(ssm, offline, serverPrinting)
+    @SlideshowGoogleAnalytics(ssm, offline, serverPrinting, gpToken)
 </head>
 <body>
     @SlideshowLogo(ssm, offline)
