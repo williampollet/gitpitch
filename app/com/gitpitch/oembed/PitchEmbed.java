@@ -48,8 +48,8 @@ public class PitchEmbed {
     public String height = DEFAULT_HEIGHT;
     public String author_url;
     public String thumbnail_url = DEFAULT_THUMB;
-    public int    thumbnail_width;
-    public int    thumbnail_height;
+    public String thumbnail_width;
+    public String thumbnail_height;
 
     public static PitchEmbed build(GRSManager grsManager,
                                       String url) {
