@@ -92,7 +92,7 @@ Done!
 #### Auto-Generated Table-of-Contents
 #### Share Presentation on Twitter or LinkedIn
 
----
+---?image=images/rocket-launch.jpg
 
 ### Go for it.
 ### Just add <span style="color: #e49436; text-transform: none">PITCHME.md</span> ;)
