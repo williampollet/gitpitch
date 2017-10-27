@@ -97,6 +97,6 @@ Done!
 <br><br><br><br><br>
 
 ### Go for it.
-### Just add <span style="text-transform: none">PITCHME.md</span> <span style="color: #e49436;">;)</span>
+### Just add <span style="color: #e49436; text-transform: none">PITCHME.md</span> <span style="color: white;">;)</span>
 <br>
 <a style="font-size:0.6em;" href="https://github.com/gitpitch/gitpitch/wiki">[ Click To Learn More On Wiki ]</a>
