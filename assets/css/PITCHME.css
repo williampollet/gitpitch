@@ -39,14 +39,6 @@ span.aside {
 }
 
 .reveal p span.slide-title {
-  color: white;
-  background: #54140c;
-  padding: 4px 15px;
-  opacity: 0.75 !important;
-  border-radius: 15px;
-}
-
-.slide-title {
   color: #e49436;
   font-size: 1.55em;
   display: block;
