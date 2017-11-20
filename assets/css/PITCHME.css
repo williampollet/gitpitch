@@ -37,3 +37,25 @@ span.aside {
 .fa-pad-left {
   margin-left: 10px;
 }
+
+.reveal p span.slide-title {
+  color: white;
+  background: #54140c;
+  padding: 4px 15px;
+  opacity: 0.75 !important;
+  border-radius: 15px;
+}
+
+.slide-title {
+  color: #e49436;
+  font-size: 1.55em;
+  display: block;
+  letter-spacing: -0.03em;
+  text-transform: none;
+  text-shadow: none;
+  word-wrap: break-word;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
