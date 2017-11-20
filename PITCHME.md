@@ -25,11 +25,8 @@
 #### Just <span class="gold">Markdown</span>.
 #### Then <span class="gold">Git-Commit</span>.
 
----
+---?code=assets/md/hello.md&title=Step 1. PITCHME.md
 
-@title[Step 1. PITCHME.md]
-
-### <span class="gold">STEP 1. Create 'PITCHME.md'</span>
 <br>
 #### Create GitPitch slideshow content using GitHub Flavored Markdown in your favorite editor.
 <br>
