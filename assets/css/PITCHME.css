@@ -33,3 +33,7 @@ span.aside {
 .reveal section a:hover {
   color: #e7ad52;
 }
+
+.fa-pad-left {
+  margin-left: 10px;
+}
