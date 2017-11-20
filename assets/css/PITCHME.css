@@ -41,7 +41,12 @@ span.aside {
 .reveal p span.slide-title {
   color: #e49436;
   font-size: 1.55em;
-  display: block;
+  margin: 0 0 20px 0;
+  font-family: "Montserrat", Impact, sans-serif;
+  font-weight: normal;
+  line-height: 1.2;
   letter-spacing: -0.03em;
+  text-transform: none;
+  text-shadow: none;
   word-wrap: break-word;
 }
