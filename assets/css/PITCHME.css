@@ -43,11 +43,5 @@ span.aside {
   font-size: 1.55em;
   display: block;
   letter-spacing: -0.03em;
-  text-transform: none;
-  text-shadow: none;
   word-wrap: break-word;
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
 }
