@@ -29,7 +29,7 @@
 
 <br>
 #### Create slideshow content using GitHub Flavored Markdown in your favorite editor.
-<br>
+
 <span class="aside">It's as easy as README.md with simple slide-delimeters (---)</span>
 
 ---
