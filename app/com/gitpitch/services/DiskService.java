@@ -49,6 +49,7 @@ public class DiskService {
     private final Logger.ALogger log = Logger.of(this.getClass());
 
     private final String storage;
+    private final String decktape;
     private final ShellService shellService;
     private final Runtime runtime;
     private final WebService ws;
@@ -62,6 +63,7 @@ public class DiskService {
         this.runtime = runtime;
         this.ws = ws;
         this.storage = runtime.config("gitpitch.storage.home");
+        this.decktape = runtime.config("gitpitch.decktape.home");
     }
 
     /*
@@ -273,6 +275,13 @@ public class DiskService {
      */
     public String storage() {
         return storage;
+    }
+
+    /*
+     * Return DeckTape PDF Exporter home directory.
+     */
+    public String decktape() {
+        return decktape;
     }
 
     private static final Integer STATUS_OK = 0;

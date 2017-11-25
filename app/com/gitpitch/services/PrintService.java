@@ -166,8 +166,10 @@ public class PrintService {
                         .absoluteURL(isEncrypted(),
                                 hostname());
 
+        Path dtapePath = Paths.get(diskService.decktape());
+
         String[] cmd = { PDF_DECKTAPE, PDF_COMMAND, slideshowUrl, filePath};
-        int generated = shellService.exec(GIT_PDF, pp, branchPath, cmd);
+        int generated = shellService.exec(GIT_PDF, pp, dtapePath, cmd);
 
         if (generated != STATUS_OK) {
             log.warn("generatePDF: pp={}, generate status={}", pp, generated);
