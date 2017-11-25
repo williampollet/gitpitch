@@ -166,10 +166,10 @@ public class PrintService {
                         .absoluteURL(isEncrypted(),
                                 hostname());
 
-        Path dtapePath = Paths.get(diskService.decktape());
-
-        String[] cmd = { PDF_DECKTAPE, PDF_COMMAND, slideshowUrl, filePath};
-        int generated = shellService.exec(GIT_PDF, pp, dtapePath, cmd);
+        String deckTape = diskService.decktape();
+        String[] cmd = { deckTape, REVEAL, slideshowUrl, filePath};
+        log.debug("generatePDF: deckTape={}", deckTape);
+        int generated = shellService.exec(GIT_PDF, pp, branchPath, cmd);
 
         if (generated != STATUS_OK) {
             log.warn("generatePDF: pp={}, generate status={}", pp, generated);
@@ -186,8 +186,7 @@ public class PrintService {
         return runtime.config("gitpitch.hostname");
     }
 
-    private static final String PDF_DECKTAPE = "decktape";
-    private static final String PDF_COMMAND = "reveal";
+    private static final String REVEAL = "reveal";
     private static final String PITCHME_PDF = "PITCHME.pdf";
     private static final String PRINT_NO_FRAGS = "false";
     private static final String GIT_PDF = "pdf";
