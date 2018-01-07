@@ -1,6 +1,6 @@
 # Markdown Presentations on GitHub, GitLab, Bitbucket, GitBucket, Gitea, and Gogs.
 
-Gitpitch configuration for heroku deployment. See [GitPitch](https://github.com/gitpitch/gitpitch) for more informations
+Gitpitch configuration for heroku deployment. Forked from [GitPitch](https://github.com/gitpitch/gitpitch).
 
 ## Create a presentation
 
@@ -13,4 +13,8 @@ Gitpitch configuration for heroku deployment. See [GitPitch](https://github.com/
 
 [pronto](presentations.williampollet.com/williampollet/talks/pronto)
 
-#### WEBSITE: [www.gitpitch.com](https://gitpitch.com) | HOW-TO : [GitPitch Wiki](https://github.com/gitpitch/gitpitch/wiki) | TWITTER: [@gitpitch](https://twitter.com/gitpitch)
+## Resources
+
+#### WEBSITE: [www.gitpitch.com](https://gitpitch.com)
+#### HOW-TO : [GitPitch Wiki](https://github.com/gitpitch/gitpitch/wiki)
+#### TWITTER: [@gitpitch](https://twitter.com/gitpitch)
