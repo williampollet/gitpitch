@@ -14,7 +14,6 @@ Gitpitch configuration for heroku deployment. Forked from [GitPitch](https://git
 [Automatic code reviews with pronto](presentations.williampollet.com/williampollet/talks/automatic-code-reviews-with-pronto)
 
 ## Resources
-
-#### WEBSITE: [www.gitpitch.com](https://gitpitch.com)
-#### HOW-TO : [GitPitch Wiki](https://github.com/gitpitch/gitpitch/wiki)
-#### TWITTER: [@gitpitch](https://twitter.com/gitpitch)
+WEBSITE: [www.gitpitch.com](https://gitpitch.com)
+HOW-TO : [GitPitch Wiki](https://github.com/gitpitch/gitpitch/wiki)
+TWITTER: [@gitpitch](https://twitter.com/gitpitch)
