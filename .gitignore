@@ -18,3 +18,4 @@ server.pid
 .project
 .settings/
 /node_modules
+.env
